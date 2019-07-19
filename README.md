@@ -1,15 +1,15 @@
 # Create a catkin workspace
 
- mkdir -p ~/catkin_ws/src   # Replace `catkin_ws` with the name of your workspace
- cd ~/catkin_ws/
- catkin_make
+ $ mkdir -p ~/catkin_ws/src   # Replace `catkin_ws` with the name of your workspace
+ $ cd ~/catkin_ws/
+ $ catkin_make
  # Download Following  code
-cd ~/catkin_ws/src
-git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
-git clone https://github.com/ros-perception/camera_info_manager_py
-git clone https://github.com/OTL/cv_camera
-git clone https://github.com/ros-perception/vision_opencv
-git clone https://github.com/ros-drivers/usb_cam
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
+$ git clone https://github.com/ros-perception/camera_info_manager_py
+$ git clone https://github.com/OTL/cv_camera
+$ git clone https://github.com/ros-perception/vision_opencv
+$ git clone https://github.com/ros-drivers/usb_cam
 # Install python dependencies
 '''shell
 cd ~/catkin_ws/src/dope
