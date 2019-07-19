@@ -4,23 +4,22 @@
  $ cd ~/catkin_ws/
  $ catkin_make
  # Download Following  code
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
-$ git clone https://github.com/ros-perception/camera_info_manager_py
-$ git clone https://github.com/OTL/cv_camera
-$ git clone https://github.com/ros-perception/vision_opencv
-$ git clone https://github.com/ros-drivers/usb_cam
+1.  cd ~/catkin_ws/src
+2.  git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
+3.  git clone https://github.com/ros-perception/camera_info_manager_py
+4.  git clone https://github.com/OTL/cv_camera
+5.  git clone https://github.com/ros-perception/vision_opencv
+6.  git clone https://github.com/ros-drivers/usb_cam
 # Install python dependencies
-'''shell
-cd ~/catkin_ws/src/dope
-pip install -r requirements.txt
-'''
+
+1. cd ~/catkin_ws/src/dope
+2. pip install -r requirements.txt
 # Install ROS dependencies
-'''shell
+```shell
 cd ~/catkin_ws
 rosdep install --from-paths src -i --rosdistro melodic
 sudo apt-get install ros-melodic-rosbash ros-melodic-ros-comm
-'''
+```
 
 # Install opencv 3.2
 this version required for python 2
